@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">DISCOM Energy Accounting</string>
+    <string name="meter_Make">METER MAKE</string>
+    <string name="meter_Serial_no">METER SERIAL NO</string>
+    <string name="pss_feeder_name">FEEDER NAME</string>
+    <string name="pss_feeder_code">FEEDER CODE</string>
+    <string name="pss_feeder_voltageLevel">VOLTAGE LEVEL</string>
+
+    <!-- Meter Details -->
+    <string name="feederMeterDetails">Feeder Meter Details</string>
+
+    <string name="feeder_meterAvailablity">AVAILABLITY</string>
+    <string name="feeder_meterMake">MAKE</string>
+    <string name="feeder_meterSerialNo">SERIAL NUMBER</string>
+    <string name="feeder_meterCapacity">CAPACITY</string>
+    <string name="pss_feeder_meterClass">CLASS</string>
+
+    <!-- Meter Communication -->
+    <string name="pss_feeder_meterCommunicablity">COMMUNICABLITY</string>
+    <string name="feederMeterCommunication">Meter Communication Details</string>
+    <string name="pss_feeder_meterModemSignal">MODEM SIGNAL</string>
+    <string name="pss_feeder_meterDCUSignal">DCU SIGNAL</string>
+
+    <!-- MeteringUnit Details -->
+    <string name="feederMeteringUnit">Metering Unit</string>
+    <string name="feeder_meteringUnitAvailablity">Metering Unit Availablity</string>
+    <string name="feeder_meteringUnitMake">Metering Unit Make</string>
+    <string name="feeder_meteringUnitSerialNo">Metering Unit Serial Number</string>
+    <string name="feeder_mtrUnitMake">MAKE</string>
+    <string name="feeder_mtrUnitAvailablity">AVAILABLITY</string>
+    <string name="feeder_meteringUnitManufYear">Manufacturing Year</string>
+    <string name="feeder_mtrUnitCapacity">CAPACITY</string>
+    <string name="feeder_meteringUnitConnCurrentRatio">Connection Current Ratio</string>
+    <string name="feeder_mtrUnitVltRatio">VOLTAGE RATIO</string>
+    <string name="feeder_meteringUnit_MF">MF</string>
+
+    <!-- Instant Reading -->
+    <string name="feeder_mtr_InstRead_lr">lr</string>
+    <string name="feeder_mtr_InstRead_ly">ly</string>
+    <string name="feeder_mtr_InstRead_lb">lb</string>
+    <string name="feederMeter_InstantReading">Instant Reading</string>
+    <string name="feeder_mtr_InstRead_Vr">Vr</string>
+    <string name="feeder_mtr_InstRead_Vy">Vy</string>
+    <string name="feeder_mtr_InstRead_Vb">Vb</string>
+    <string name="feeder_mtr_InstRead_H1Kwh">H1Kwh</string>
+    <string name="feeder_mtr_InstRead_H2Kwh">H2Kwh</string>
+    <string name="feeder_mtr_InstRead_PON1">P ON1</string>
+    <string name="feeder_mtr_InstRead_PON2">P ON2</string>
+    <string name="feeder_mtr_InstRead_AvPFH1">Av PF H1</string>
+    <string name="feeder_mtr_InstRead_AvPFH2">Av PF H2</string>
+
+
+    <!-- Panel Details -->
+
+    <string name="pss_panel_name">panel NAME</string>
+    <string name="pss_panel_code">panel CODE</string>
+    <string name="pss_panel_voltageLevel">VOLTAGE LEVEL</string>
+
+
+    <string name="pss_panelMeterDetails">PANEL METER DETAILS</string>
+    <string name="panelMeterDetails">panel Meter Details</string>
+
+    <string name="panel_meterAvailablity">AVAILABLITY</string>
+    <string name="panel_meterMake">MAKE</string>
+    <string name="panel_meterSerialNo">SERIAL NUMBER</string>
+    <string name="panel_meterCapacity">CAPACITY</string>
+    <string name="pss_panel_meterClass">CLASS</string>
+
+    <!-- Meter Communication -->
+    <string name="pss_panel_meterCommunicablity">COMMUNICABLITY</string>
+    <string name="panelMeterCommunication">Meter Communication Details</string>
+    <string name="pss_panel_meterModemSignal">MODEM SIGNAL</string>
+    <string name="pss_panel_meterDCUSignal">DCU SIGNAL</string>
+
+    <!-- MeteringUnit Details -->
+    <string name="panelMeteringUnit">VCB-CT</string> <!-- Metering Unit = VCB-CT -->
+    <string name="panel_meteringUnitAvailablity">Availablity</string>
+    <string name="panel_meteringUnitMake">Make</string>
+    <string name="panel_meteringUnitSerialNo">Serial Number</string>
+    <string name="panel_mtrUnitMake">MAKE</string>
+    <string name="panel_mtrUnitAvailablity">AVAILABLITY</string>
+    <string name="panel_meteringUnitManufYear">Manufacturing Year</string>
+    <string name="panel_mtrUnitCapacity">CAPACITY</string>
+    <string name="panel_meteringUnitConnCurrentRatio">Connection Current Ratio</string>
+    <string name="panel_mtrUnitVltRatio">PT STATUS</string> <!-- VOLTAGE RATIO = PT STATUS -->
+    <string name="panel_meteringUnit_MF">MF</string>
+
+    <!-- Instant Reading -->
+    <string name="panel_mtr_InstRead_lr">lr</string>
+    <string name="panel_mtr_InstRead_ly">ly</string>
+    <string name="panel_mtr_InstRead_lb">lb</string>
+    <string name="panelMeter_InstantReading">Instant Reading</string>
+    <string name="panel_mtr_InstRead_Vr">Vr</string>
+    <string name="panel_mtr_InstRead_Vy">Vy</string>
+    <string name="panel_mtr_InstRead_Vb">Vb</string>
+    <string name="panel_mtr_InstRead_H1Kwh">H1Kwh</string>
+    <string name="panel_mtr_InstRead_H2Kwh">H2Kwh</string>
+    <string name="panel_mtr_InstRead_PON1">P ON1</string>
+    <string name="panel_mtr_InstRead_PON2">P ON2</string>
+    <string name="panel_mtr_InstRead_AvPFH1">Av PF H1</string>
+    <string name="panel_mtr_InstRead_AvPFH2">Av PF H2</string>
+    <string name="feederDetails">FEEDER DETAILS</string>
+    <string name="panelDetails">PANEL DETAILS</string>
+
+
+</resources>

@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding_size_small"
+        android:orientation="vertical">
+
+        <!-- User input for PSS FEEDER NAME-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pss_feeder_name_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/pss_feeder_name">
+
+            <AutoCompleteTextView
+                android:id="@+id/pss_feeder_name_AutoC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:completionThreshold="@integer/material_motion_duration_short_1"
+                android:inputType="none"
+                android:maxLines="@integer/material_motion_duration_short_1"
+                android:padding="@dimen/margin_padding_size_small"
+                android:textSize="@dimen/text_size_medium">
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- User input for PSS FEEDER CODE-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pss_feeder_code_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/pss_feeder_code">
+
+            <AutoCompleteTextView
+                android:id="@+id/pss_feeder_code_AutoC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:completionThreshold="@integer/material_motion_duration_short_1"
+                android:inputType="none"
+                android:maxLines="@integer/material_motion_duration_short_1"
+                android:padding="@dimen/margin_padding_size_small"
+                android:textSize="@dimen/text_size_medium">
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- User input for PSS FEEDER VOLTAGE LEVEL-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pss_feeder_voltageLevel_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/pss_feeder_voltageLevel">
+
+            <AutoCompleteTextView
+                android:id="@+id/pss_feeder_voltageLevel_AutoC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:completionThreshold="@integer/material_motion_duration_short_1"
+                android:inputType="none"
+                android:maxLines="@integer/material_motion_duration_short_1"
+                android:padding="@dimen/margin_padding_size_small"
+                android:textSize="@dimen/text_size_medium">
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/feederDetail2meter_Button"
+            style="@style/Widget.MaterialComponents.Button"
+            android:elevation="@dimen/margin_padding_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_padding_size_small"
+            android:layout_marginBottom="@dimen/margin_padding_size_xlarge"
+            android:background="@color/purple_200"
+            android:text="NEXT"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold|italic"
+            app:cornerRadius="@dimen/margin_padding_size_medium" />
+
+
+        <!-- using Divider
+        <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="@dimen/margin_padding_size_small"
+        app:dividerColor="@color/purple_200" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_size_small"
+            android:text="@string/feederMeterDetails"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        &lt;!&ndash; User input for PSS Feeder Meter Details : AVAILABLITY &ndash;&gt;
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pss_feeder_meterAvailablity_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/feeder_meterAvailablity">
+
+            <AutoCompleteTextView
+                android:id="@+id/feeder_meterAvailablity_AutoC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:completionThreshold="@integer/material_motion_duration_short_1"
+                android:inputType="none"
+                android:maxLines="@integer/material_motion_duration_short_1"
+                android:padding="@dimen/margin_padding_size_small"
+                android:textSize="@dimen/text_size_medium">
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        &lt;!&ndash; User input for PSS Feeder Meter Details : MAKE &ndash;&gt;
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/feeder_meterMake_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/feeder_meterMake">
+
+            <AutoCompleteTextView
+                android:id="@+id/feeder_meterMake_AutoC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:completionThreshold="@integer/material_motion_duration_short_1"
+                android:inputType="none"
+                android:maxLines="@integer/material_motion_duration_short_1"
+                android:padding="@dimen/margin_padding_size_small"
+                android:textSize="@dimen/text_size_medium" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        &lt;!&ndash; User input for PSS Feeder Meter Details : SERIAL No &ndash;&gt;
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/feeder_meterSerialNo_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/feeder_meterSerialNo"
+            app:counterEnabled="true"
+            app:counterTextAppearance="@dimen/text_size_small">
+
+            <EditText
+                android:id="@+id/feeder_meterSerialNo_EdtTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_medium" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        &lt;!&ndash; User input for PSS Feeder Meter Details : CAPACITY &ndash;&gt;
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/feeder_meterCapacity_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/feeder_mtrUnitCapacity">
+
+        <AutoCompleteTextView
+            android:id="@+id/feeder_meterCapacity_AutoC"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:completionThreshold="@integer/material_motion_duration_short_1"
+            android:inputType="none"
+            android:maxLines="@integer/material_motion_duration_short_1"
+            android:padding="@dimen/margin_padding_size_small"
+            android:textSize="@dimen/text_size_medium" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        &lt;!&ndash; User input for PSS Feeder Meter Details : CLASS &ndash;&gt;
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pss_feeder_meterClass_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/pss_feeder_meterClass">
+
+            <AutoCompleteTextView
+                android:id="@+id/pss_feeder_meterClass_AutoC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:completionThreshold="@integer/material_motion_duration_short_1"
+                android:inputType="none"
+                android:maxLines="@integer/material_motion_duration_short_1"
+                android:padding="@dimen/margin_padding_size_small"
+                android:textSize="@dimen/text_size_medium"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        &lt;!&ndash; User input for PSS Feeder Meter Details : COMMUNICABLITY &ndash;&gt;
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pss_feeder_meterCommunicablity_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/pss_feeder_meterCommunicablity">
+            <AutoCompleteTextView
+                android:id="@+id/pss_feeder_meterCommunicablity_AutoC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:completionThreshold="@integer/material_motion_duration_short_1"
+                android:inputType="none"
+                android:maxLines="@integer/material_motion_duration_short_1"
+                android:padding="@dimen/margin_padding_size_small"
+                android:textSize="@dimen/text_size_medium"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        &lt;!&ndash; using Divider &ndash;&gt;<com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="@dimen/margin_padding_size_small"
+        app:dividerColor="@color/purple_200" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_size_small"
+            android:text="@string/feederMeterCommunication"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold|italic" />
+
+        &lt;!&ndash; User input for PSS Feeder Meter Details : MODEM SIGNAL &ndash;&gt;
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pss_feeder_meterModemSignal_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/pss_feeder_meterModemSignal">
+            <AutoCompleteTextView
+                android:id="@+id/pss_feeder_meterModemSignal_AutoC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:completionThreshold="@integer/material_motion_duration_short_1"
+                android:inputType="none"
+                android:maxLines="@integer/material_motion_duration_short_1"
+                android:padding="@dimen/margin_padding_size_small"
+                android:textSize="@dimen/text_size_medium" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        &lt;!&ndash; User input for PSS Feeder Meter Details : DCU SIGNAL &ndash;&gt;
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pss_feeder_meterDCUSignal_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/pss_feeder_meterDCUSignal">
+            <AutoCompleteTextView
+                android:id="@+id/pss_feeder_meterDCUSignal_AutoC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:completionThreshold="@integer/material_motion_duration_short_1"
+                android:inputType="none"
+                android:maxLines="@integer/material_motion_duration_short_1"
+                android:padding="@dimen/margin_padding_size_small"
+                android:textSize="@dimen/text_size_medium" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        &lt;!&ndash; using Divider &ndash;&gt;<com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="@dimen/margin_padding_size_small"
+        app:dividerColor="@color/purple_200" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_size_small"
+            android:text="@string/feederMeteringUnit"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold|italic" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            &lt;!&ndash; User input for PSS Feeder Metering Unit Details : AVAILABLITY &ndash;&gt;
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pss_feeder_mtrUnitAvailablity_til"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_padding_size_small"
+                android:hint="@string/feeder_mtrUnitAvailablity">
+
+                <AutoCompleteTextView
+                    android:id="@+id/feeder_mtrUnitAvailablity_AutoC"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:completionThreshold="@integer/material_motion_duration_short_1"
+                    android:inputType="none"
+                    android:maxLines="@integer/material_motion_duration_short_1"
+                    android:padding="@dimen/margin_padding_size_small"
+                    android:textSize="@dimen/text_size_medium">
+
+                </AutoCompleteTextView>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            &lt;!&ndash; User input for PSS Feeder Metering Unit Details : MAKE &ndash;&gt;
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/feeder_mtrUnitMake_til"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_padding_size_small"
+                android:hint="@string/feeder_mtrUnitMake">
+
+                <AutoCompleteTextView
+                    android:id="@+id/feeder_mtrUnitMake_AutoC"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:completionThreshold="@integer/material_motion_duration_short_1"
+                    android:inputType="none"
+                    android:maxLines="@integer/material_motion_duration_short_1"
+                    android:padding="@dimen/margin_padding_size_small"
+                    android:textSize="@dimen/text_size_medium" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+        &lt;!&ndash; User input for PSS Feeder MeteringUnit Details : SERIAL NO &ndash;&gt;
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/feeder_meteringUnitSerialNo_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/feeder_meteringUnitSerialNo"
+            app:counterEnabled="true"
+            app:counterTextAppearance="@dimen/text_size_small">
+
+            <EditText
+                android:id="@+id/feeder_meteringUnitSerialNo_EdtTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        &lt;!&ndash; User input for PSS Feeder MeteringUnit Details : Manufacturing Year &ndash;&gt;
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/feeder_mtrUnit_ManufacYear_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/feeder_meteringUnitManufYear"
+            app:counterEnabled="true"
+            app:counterTextAppearance="@dimen/text_size_small">
+
+            <EditText
+                android:id="@+id/feeder_mtrUnit_ManufacYear_EdtTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        &lt;!&ndash; User input for PSS Feeder Metering Unit Details : CAPACITY &ndash;&gt;
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/feeder_mtrUnit_Capacity_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/feeder_mtrUnitCapacity">
+
+            <AutoCompleteTextView
+                android:id="@+id/feeder_mtrUnit_Capacity_AutoC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:completionThreshold="@integer/material_motion_duration_short_1"
+                android:inputType="none"
+                android:maxLines="@integer/material_motion_duration_short_1"
+                android:padding="@dimen/margin_padding_size_small"
+                android:textSize="@dimen/text_size_medium" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        &lt;!&ndash; User input for PSS Feeder Metering Unit Details : Voltage Ratio &ndash;&gt;
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/feeder_mtrUnit_VltRatio_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/feeder_mtrUnitVltRatio">
+
+            <AutoCompleteTextView
+                android:id="@+id/feeder_mtrUnit_VltRatio_AutoC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:completionThreshold="@integer/material_motion_duration_short_1"
+                android:inputType="none"
+                android:maxLines="@integer/material_motion_duration_short_1"
+                android:padding="@dimen/margin_padding_size_small"
+                android:textSize="@dimen/text_size_medium" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        &lt;!&ndash; User input for PSS Feeder MeteringUnit Details : Connection Current Ratio &ndash;&gt;
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/feeder_mtrUnit_ConnCurrentRatio_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/feeder_meteringUnitConnCurrentRatio"
+            app:counterEnabled="true"
+            app:counterTextAppearance="@dimen/text_size_small">
+
+            <EditText
+                android:id="@+id/feeder_mtrUnit_ConnCurrentRatio_EdtTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        &lt;!&ndash; User input for PSS Feeder MeteringUnit Details : MF &ndash;&gt;
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/feeder_mtrUnit_MF_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/feeder_meteringUnit_MF"
+            app:counterEnabled="true"
+            app:counterTextAppearance="@dimen/text_size_small">
+            &lt;!&ndash; android:layout_weight="1" &ndash;&gt;
+
+            <EditText
+                android:id="@+id/feeder_mtrUnit_MF_EdtTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        &lt;!&ndash; using Divider &ndash;&gt;<com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="@dimen/margin_padding_size_small"
+        app:dividerColor="@color/purple_200" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_size_small"
+            android:text="@string/feederMeter_InstantReading"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold|italic"/>
+
+        &lt;!&ndash; User input for PSS Feeder Meter Instant Reading &ndash;&gt;
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/feeder_mtr_InstRead_lr_til"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/margin_padding_size_small"
+        android:hint="@string/feeder_mtr_InstRead_lr"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@dimen/text_size_small">
+        &lt;!&ndash; android:layout_weight="1" &ndash;&gt;
+
+        <EditText
+            android:id="@+id/feeder_mtr_InstRead_lr_EdtTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_large"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/feeder_mtr_InstRead_ly_til"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/margin_padding_size_small"
+        android:hint="@string/feeder_mtr_InstRead_ly"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@dimen/text_size_small">
+        &lt;!&ndash; android:layout_weight="1" &ndash;&gt;
+
+        <EditText
+            android:id="@+id/feeder_mtr_InstRead_ly_EdtTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_large" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/feeder_mtr_InstRead_lb_til"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/margin_padding_size_small"
+        android:hint="@string/feeder_mtr_InstRead_lb"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@dimen/text_size_small">
+        &lt;!&ndash; android:layout_weight="1" &ndash;&gt;
+
+        <EditText
+            android:id="@+id/feeder_mtr_InstRead_lb_EdtTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_large" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/feeder_mtr_InstRead_Vr_til"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_padding_size_small"
+                android:hint="@string/feeder_mtr_InstRead_Vr"
+                app:counterEnabled="true"
+                app:counterTextAppearance="@dimen/text_size_small">
+                &lt;!&ndash; android:layout_weight="1" &ndash;&gt;
+
+                <EditText
+                    android:id="@+id/feeder_mtr_InstRead_Vr_EdtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_size_large" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/feeder_mtr_InstRead_Vy_til"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_padding_size_small"
+                android:hint="@string/feeder_mtr_InstRead_Vy"
+                app:counterEnabled="true"
+                app:counterTextAppearance="@dimen/text_size_small">
+                &lt;!&ndash; android:layout_weight="1" &ndash;&gt;
+
+                <EditText
+                    android:id="@+id/feeder_mtr_InstRead_Vy_EdtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_size_large" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/feeder_mtr_InstRead_Vb_til"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_padding_size_small"
+                android:hint="@string/feeder_mtr_InstRead_Vb"
+                app:counterEnabled="true"
+                app:counterTextAppearance="@dimen/text_size_small">
+                &lt;!&ndash; android:layout_weight="1" &ndash;&gt;
+
+                <EditText
+                    android:id="@+id/feeder_mtr_InstRead_Vb_EdtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_size_large" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/feeder_mtr_InstRead_H1Kwh_til"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_padding_size_small"
+                android:hint="@string/feeder_mtr_InstRead_H1Kwh"
+                app:counterEnabled="true"
+                app:counterTextAppearance="@dimen/text_size_small">
+                &lt;!&ndash; android:layout_weight="1" &ndash;&gt;
+
+                <EditText
+                    android:id="@+id/feeder_mtr_InstRead_H1Kwh_EdtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_size_large" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/feeder_mtr_InstRead_H2Kwh_til"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_padding_size_small"
+                android:hint="@string/feeder_mtr_InstRead_H2Kwh"
+                app:counterEnabled="true"
+                app:counterTextAppearance="@dimen/text_size_small">
+                &lt;!&ndash; android:layout_weight="1" &ndash;&gt;
+
+                <EditText
+                    android:id="@+id/feeder_mtr_InstRead_H2Kwh_EdtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_size_large" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/feeder_mtr_InstRead_PON1_til"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_padding_size_small"
+                android:hint="@string/feeder_mtr_InstRead_PON1"
+                app:counterEnabled="true"
+                app:counterTextAppearance="@dimen/text_size_small">
+                &lt;!&ndash; android:layout_weight="1" &ndash;&gt;
+
+                <EditText
+                    android:id="@+id/feeder_mtr_InstRead_PON1_EdtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_size_large" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/feeder_mtr_InstRead_PON2_til"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_padding_size_small"
+                android:hint="@string/feeder_mtr_InstRead_PON2"
+                app:counterEnabled="true"
+                app:counterTextAppearance="@dimen/text_size_small">
+                &lt;!&ndash; android:layout_weight="1" &ndash;&gt;
+
+                <EditText
+                    android:id="@+id/feeder_mtr_InstRead_PON2_EdtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_size_large" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/feeder_mtr_InstRead_AvPFH1_til"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_padding_size_small"
+                    android:hint="@string/feeder_mtr_InstRead_AvPFH1"
+                    app:counterEnabled="true"
+                    app:counterTextAppearance="@dimen/text_size_small">
+                    &lt;!&ndash; android:layout_weight="1" &ndash;&gt;
+
+                    <EditText
+                        android:id="@+id/feeder_mtr_InstRead_AvPFH1_EdtTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1"
+                     android:textSize="@dimen/text_size_large"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/feeder_mtr_InstRead_AvPFH2_til"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_padding_size_small"
+                    android:hint="@string/feeder_mtr_InstRead_AvPFH2"
+                    app:counterEnabled="true"
+                    app:counterTextAppearance="@dimen/text_size_small">
+                    &lt;!&ndash; android:layout_weight="1" &ndash;&gt;
+
+                    <EditText
+                        android:id="@+id/feeder_mtr_InstRead_AvPFH2_EdtTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_size_large"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/meter2panel_Button"
+            style="@style/Widget.MaterialComponents.Button"
+            android:elevation="@dimen/margin_padding_size_medium"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_padding_size_small"
+            android:layout_marginBottom="@dimen/margin_padding_size_xlarge"
+            android:background="@color/purple_200"
+            android:text="NEXT"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold|italic"
+            app:cornerRadius="@dimen/margin_padding_size_medium" />-->
+
+    </LinearLayout>
+
+
+</ScrollView>
