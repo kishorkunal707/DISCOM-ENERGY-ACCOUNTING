@@ -15,6 +15,75 @@
         android:layout_margin="@dimen/margin_padding_size_small"
         android:orientation="vertical">
 
+        <!-- DIVISION NAME-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/division_name_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/division_name">
+
+            <AutoCompleteTextView
+                android:id="@+id/division_name_AutoC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:completionThreshold="@integer/material_motion_duration_short_1"
+                android:inputType="none"
+                android:maxLines="@integer/material_motion_duration_short_1"
+                android:padding="@dimen/margin_padding_size_small"
+                android:textSize="@dimen/text_size_medium">
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- SUB DIVISION NAME-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/subdivision_name_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/subdivision_name">
+
+            <AutoCompleteTextView
+                android:id="@+id/subdivision_name_AutoC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:completionThreshold="@integer/material_motion_duration_short_1"
+                android:inputType="none"
+                android:maxLines="@integer/material_motion_duration_short_1"
+                android:padding="@dimen/margin_padding_size_small"
+                android:textSize="@dimen/text_size_medium">
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- PSS NAME-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pss_name_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:hint="@string/pss_name">
+
+            <AutoCompleteTextView
+                android:id="@+id/pss_name_AutoC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:completionThreshold="@integer/material_motion_duration_short_1"
+                android:inputType="none"
+                android:maxLines="@integer/material_motion_duration_short_1"
+                android:padding="@dimen/margin_padding_size_small"
+                android:textSize="@dimen/text_size_medium">
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
         <!-- User input for PSS FEEDER NAME-->
 
         <com.google.android.material.textfield.TextInputLayout

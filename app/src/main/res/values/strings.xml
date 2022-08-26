@@ -101,6 +101,9 @@
     <string name="panel_mtr_InstRead_AvPFH2">Av PF H2</string>
     <string name="feederDetails">FEEDER DETAILS</string>
     <string name="panelDetails">PANEL DETAILS</string>
+    <string name="division_name">DIVISION</string>
+    <string name="subdivision_name">SUB DIVISION</string>
+    <string name="pss_name">PSS NAME</string>
 
 
 </resources>

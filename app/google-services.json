@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "857794697978",
+    "project_id": "discom-ea",
+    "storage_bucket": "discom-ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857794697978:android:c92c3d0dfd4b275a220743",
+        "android_client_info": {
+          "package_name": "com.example.discomenergyaccounting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857794697978-do3ghmju50o3u0b861j78e4ahtak9usl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.discomenergyaccounting",
+            "certificate_hash": "9146a1b685d619b56b83abb77f8924df03bd4a23"
+          }
+        },
+        {
+          "client_id": "857794697978-2tvkeqtl9gki8k4a05meiev0n3mt8g1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbl9XIWNxffOqXL9qvuBYQNrainz1yGds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "857794697978-2tvkeqtl9gki8k4a05meiev0n3mt8g1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
